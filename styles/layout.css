@@ -12,33 +12,33 @@ label {
 }
 
 .labels {
-  background-image: url('/styles/form-elements-sprite.png');
+  background-image: url('form-elements-sprite.png');
   background-repeat: no-repeat;
   background-size: 340px;
 }
 
-#checkbox input[type="checkbox"]:not(:checked) + label {
+.checkbox-unchecked {
   background-position: -37px -56px;
   display: block;
   height: 38px;
   width: 38px;
 }
 
-#checkbox input[type="checkbox"]:checked + label {
+.checkbox-checked {
   background-position: -89px -56px;
   display: block;
   height: 38px;
   width: 38px;
 }
 
-#radio input[type="radio"]:not(checked) + label {
+.radio-unchecked {
   background-position: -136px -56px;
   display: block;
   height: 42px;
   width: 42px;
 }
 
-#radio input[type="radio"]:checked + label {
+.radio-checked {
   background-position: -190px -56px;
   display: block;
   height: 42px;

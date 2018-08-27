@@ -7,6 +7,10 @@ section p {
   color: red;
 }
 
+#text-input input:valid {
+  border: 1px solid #666666;
+}
+
 #text-input input:invalid {
   border: 1px solid red;
 }

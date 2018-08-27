@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <link rel="stylesheet" href="styles/normalize.css" type="text/css">
- <link rel="stylesheet" href="styles/base.css" type="text/css">
- <link rel="stylesheet" href="styles/layout.css" type="text/css">
- <link rel="stylesheet" href="styles/modules.css" type="text/css">
 
- <title>UI Challenge 2</title>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+  <link rel="stylesheet" href="styles/base.css" type="text/css">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css">
+  <link rel="stylesheet" href="styles/modules.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <title>UI Challenge 2</title>
 </head>
 
 <body>
- <header>
-  <h1>UI Challenge - Custom Form Elements</h1>
- </header>
+  <header>
+    <h1>UI Challenge - Custom Form Elements</h1>
+  </header>
 
   <main>
-      <form>
+    <form>
 
-          <section id="text-input">
-              <label for="username">text input</label><br>
-                <input id="username" type="text" placeholder="placeholder text" required >
-                <p>please enter a valid username</p>
-             
-          </section>
+      <section id="text-input">
+        <label for="username">text input</label>
+        <br>
+        <input id="username" type="text" placeholder="Please enter a name" required>
+        <p>please enter a valid username</p>
 
-          <section id="select-box">
-                <label for="select">select box</label><br>
-                <select id="select" name="select">
-                  <option val="">please select an option...</option>
-                  <option value="option 1">option 1</option>
-                  <option value="option 2">option 2</option>
-                  <option value="option 3">option 3</option>
-                  <option value="option 4">option 4</option>
-                  <option value="option 5">option 5</option>
-                </select>
-          </section>
+      </section>
 
-          <section id="checkbox">
-                  <label>checkbox</label><br>
-                  <input id="input-checkbox" type="checkbox">
-                  <label id="target-checkbox-img" class="labels" for="input-checkbox">
-                  
-          </section>
+      <section id="select-box">
+        <label for="select">select box</label>
+        <br>
+        <select id="select" name="select">
+          <option val="">please select an option...</option>
+          <option value="option 1">option 1</option>
+          <option value="option 2">option 2</option>
+          <option value="option 3">option 3</option>
+          <option value="option 4">option 4</option>
+          <option value="option 5">option 5</option>
+        </select>
+      </section>
 
-          <section id="radio">
-              <label>radio</label><br>
-              <input id="input-radio" type="radio">
-              <label id="target-radio-img" class="labels" for="input-radio">
-             
-          </section>
+      <section id="checkbox">
+          <label>checkbox</label>
+          <br>
+          <input id="input-checkbox" type="checkbox">
+          <label id="target-checkbox-img" class="labels checkbox-unchecked" for="input-checkbox">
+  
+        </label></section>
+  
+        <section id="radio">
+          <label>radio</label>
+          <br>
+          <input id="input-radio" type="radio" class="radio-notselected">
+          <label id="target-radio-img" class="labels radio-unchecked" for="input-radio">
+  
+        </label></section>
+  
+        <section id="button">
+          <label>buttons</label>
+          <br>
+          <input id="input-button" type="submit">
+          <label for="input-button">
+        </label></section>
 
-          <section id="button">
-              <label>buttons</label><br>
-              <input id="input-button" type="submit">
-              <label for="input-button">
-          </section>
 
-
-      </form> 
+    </form>
   </main>
 
- <footer>
+  <script>
+      $("#checkbox > label").click(function () {
+        $(this).toggleClass("checkbox-checked");
+      });
+    $("#radio > label").click(function () {
+        $(this).toggleClass("radio-checked");
+      });
+    </script>
 
- </footer>
+  <footer>
+
+  </footer>
 
 </body>
+
 </html>
