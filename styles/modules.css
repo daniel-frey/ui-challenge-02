@@ -1,0 +1,40 @@
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+section p {
+  color: red;
+}
+
+#text-input input:invalid {
+  border: 1px solid red;
+}
+
+#username {
+  width: 825px;
+  height: 35px;
+}
+
+p {
+  margin-left: 620px;
+}
+
+#select {
+  width: 825px;
+  height: 35px;
+}
+
+#button input {
+  width: 150px;
+  height: 40px;
+}
+
+#input-button {
+  background-color: #d8d8d8;
+
+}
+#input-button:hover {
+  color: white;
+  background-color: #666666;
+}
